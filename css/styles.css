@@ -5,3 +5,22 @@
 .tool-link{display:flex;align-items:center;justify-content:center;gap:7px;text-decoration:none;color:var(--muted);font-size:14px;font-weight:600;padding:10px 15px;border-radius:10px;transition:background .18s,color .18s}
 .tool-link:hover,.tool-link.active{background:var(--soft);color:var(--primary)}
 .tool-link:focus-visible,button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #38bdf8;outline-offset:2px}
+
+/* Jalali date picker */
+.jalali-overlay{position:fixed;inset:0;z-index:9999;background:#071116b8;display:grid;place-items:center;padding:16px}
+.jalali-overlay[hidden]{display:none}
+.jalali-dialog{width:min(100%,390px);background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:26px;padding:20px;box-shadow:0 24px 80px #0005}
+.jalali-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:18px}
+.jalali-head strong{font-size:19px}
+.jalali-head button{width:42px;height:42px;border:0;border-radius:13px;background:var(--soft);color:var(--primary);font-size:28px}
+.jalali-week,.jalali-days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px;text-align:center}
+.jalali-week{color:var(--muted);font-size:13px;margin-bottom:8px}
+.jalali-week span{padding:7px 0}
+.jp-day,.jp-blank{min-width:0;aspect-ratio:1;border:0;border-radius:50%;display:grid;place-items:center}
+.jp-day{background:transparent;color:var(--text);font-size:15px}
+.jp-day:hover{background:var(--soft)}
+.jp-day.selected{background:#0f766e;color:white;font-weight:800}
+.jalali-foot{display:flex;justify-content:space-between;gap:10px;margin-top:18px}
+.jalali-foot .btn{min-width:100px}
+body.jalali-open{overflow:hidden}
+#dueJalali,#dayJalali{cursor:pointer}
