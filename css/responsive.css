@@ -1,0 +1,2 @@
+@media(max-width:760px){.toolbar{position:sticky;top:4px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px;padding:5px}.tool-link{flex-direction:column;gap:3px;padding:8px 2px;font-size:11px}.tool-link span{white-space:nowrap}.top{align-items:flex-start}.top .row{flex-wrap:wrap;justify-content:flex-end}.top .btn{font-size:12px;padding:8px}.stats{grid-template-columns:repeat(2,1fr)}.layout{grid-template-columns:1fr}}
+@media(min-width:761px){.toolbar{max-width:100%}}
